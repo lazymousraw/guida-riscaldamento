@@ -24,6 +24,10 @@ th,td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-ali
 th{background:var(--tint)}
 figure{margin:16px 0}
 figure img{display:block;max-width:260px;width:100%;border-radius:8px;border:1px solid var(--line);background:#fff}
+figure.wide img{max-width:100%}
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:16px;align-items:start}
+.gallery figure{margin:0}
+.gallery img{max-width:100%}
 figcaption{color:var(--quiet);font-size:.9rem;font-style:italic;margin-top:6px}
 svg.diagram{width:100%;height:auto;display:block;margin:16px 0}
 .note{background:var(--tint);border-left:4px solid var(--accent);padding:10px 14px;border-radius:6px}
@@ -44,7 +48,9 @@ footer{margin-top:48px;color:var(--quiet);font-size:.85rem}
 <li><a href="#termoarredi">Solo termoarredi, stanze spente</a></li>
 <li><a href="#acqua">Temperatura dell'acqua</a></li>
 <li><a href="#collettore">Controllare pompa e testine</a></li>
+<li><a href="#non-parte">Il pavimento non parte: 5 controlli</a></li>
 <li><a href="#problemi">Problemi comuni</a></li>
+<li><a href="#raffrescamento">Raffrescamento e split</a></li>
 <li><a href="#consigli">Consigli generali</a></li>
 <li><a href="#aiuto">Chi può aiutare</a></li>
 </ol></nav>
@@ -79,7 +85,7 @@ footer{margin-top:48px;color:var(--quiet);font-size:.85rem}
 <text x="576" y="348" font-size="11.5" style="fill:var(--quiet)">pannello bianco a muro in casa</text>
 <text x="576" y="364" font-size="11.5" style="fill:var(--quiet)">pompa: luce verde = accesa</text>
 <text x="576" y="380" font-size="11.5" style="fill:var(--quiet)">testine alzate, bordo rosso = in funzione</text>
-<text x="576" y="396" font-size="11.5" style="fill:var(--quiet)">temperatura acqua: pannello in corridoio</text>
+<text x="576" y="396" font-size="11.5" style="fill:var(--quiet)">temperatura acqua: manopola bianca 20–60</text>
 <text x="576" y="476" font-weight="600" style="fill:var(--ink)">Pavimento radiante</text>
 <text x="576" y="492" font-size="11.5" style="fill:var(--quiet)">scalda le stanze</text>
 </g>
@@ -95,15 +101,24 @@ footer{margin-top:48px;color:var(--quiet);font-size:.85rem}
 <ol>
 <li>Imposta il <strong>cronotermostato centrale</strong> (in corridoio) a <strong>25 °C</strong>. È lui che comanda i termoarredi: se è più basso della temperatura di casa, i termoarredi restano freddi anche con la manopola al 5.</li>
 <li>Imposta i <strong>termostati delle stanze</strong> a <strong>19–20 °C</strong>, cioè sotto la temperatura attuale: così non chiedono calore e il radiante non parte.</li>
-<li>Abbassa la <strong>temperatura dell'acqua</strong> del radiante al minimo dal pannello in corridoio (vedi la sezione successiva).</li>
+<li>Abbassa la <strong>temperatura dell'acqua</strong> del radiante al minimo dalla manopola bianca sul collettore (vedi la sezione successiva).</li>
 <li>Controlla il collettore: la pompa deve essere spenta e le testine abbassate (vedi <a href="#collettore">Controllare pompa e testine</a>).</li>
 </ol>
 <p>Se le stanze si scaldano comunque, passa alla <a href="#problemi">tabella dei problemi</a>.</p>
 
 <h2 id="acqua">Temperatura dell'acqua</h2>
 <p>Tieni l'acqua del radiante bassa: a 40 °C una famiglia aveva la casa "come un forno". Abbassandola si riesce a tenere il riscaldamento acceso in modo costante senza soffocare. Qualcuno sospetta di averla ancora a 60 °C: vale la pena controllare.</p>
-<p>Si regola dal <strong>pannello in corridoio</strong>.</p>
+<p>Si regola dalla <strong>manopola bianca sul collettore</strong>, quella con la scala 20–60. Il termometro lì accanto mostra la temperatura reale dell'acqua. Un condomino la tiene poco sotto 40 e ha già fin troppo caldo.</p>
+<figure class="wide">
+<img src="collettore-manopole.jpg" alt="Collettore con la manopola della temperatura cerchiata in verde e il termometro in rosso">
+<figcaption>In verde la manopola della temperatura dell'acqua, in rosso il termometro.</figcaption>
+</figure>
+<figure class="wide">
+<img src="testa-termostatica.jpg" alt="Manopola bianca con la scala da 20 a 60">
+<figcaption>La manopola da vicino: la scala va da 20 a 60 °C.</figcaption>
+</figure>
 <p class="note"><strong>Trucco per la doccia:</strong> con l'acqua al minimo, poco prima della doccia alza di qualche decimo di grado il cronotermostato in corridoio. I termoarredi si scaldano in fretta e trovi gli asciugamani caldi. Poi riporta il valore come prima.</p>
+<p><strong>Per confronto:</strong> a riscaldamento spento quasi tutti hanno tra 22 e 24 °C in casa, chi è esposto a nord o al piano terra tra 19 e 21,5 °C. Chi ha acceso tutto a 25 °C per prova, la mattina dopo aveva "ferragosto in sala".</p>
 
 <h2 id="collettore">Controllare pompa e testine</h2>
 <p>Il collettore ti dice in pochi secondi se il radiante sta scaldando o no.</p>
@@ -111,6 +126,10 @@ footer{margin-top:48px;color:var(--quiet);font-size:.85rem}
 <figure>
 <img src="collettore.png" alt="Cassetta bianca a muro del collettore radiante">
 <figcaption>Com'è fatta la cassetta del collettore: foto d'esempio condivisa in chat. Dietro lo sportello trovi la pompa e le testine.</figcaption>
+</figure>
+<figure class="wide">
+<img src="collettore-aperto.jpg" alt="Collettore aperto in un appartamento del condominio">
+<figcaption>Un collettore vero, aperto, in un appartamento del condominio. In alto a sinistra la manopola bianca e il termometro, sotto la pompa nera; sulla barra in basso le testine grigie (una per circuito), in alto a destra i flussimetri rossi.</figcaption>
 </figure>
 <p><strong>Cosa guardare:</strong></p>
 <div class="table-wrap"><table>
@@ -121,6 +140,24 @@ footer{margin-top:48px;color:var(--quiet);font-size:.85rem}
 <p>La pompa parte appena <strong>un</strong> termostato di stanza chiede caldo e si ferma quando <strong>l'ultimo</strong> ha raggiunto la temperatura. Quindi, con le impostazioni "solo termoarredi", pompa spenta e testine tutte piatte = tutto giusto.</p>
 <p>Le testine servono anche a trovare guasti: una famiglia aveva metà sala col pavimento caldo e metà freddo, e la causa era una testina staccata dalla sua sede.</p>
 
+<h2 id="non-parte">Il pavimento non parte: 5 controlli</h2>
+<p>Se con tutto su "fiamma" e a 25 °C il pavimento resta freddo, di solito c'è una valvola chiusa o un interruttore spento. Il 4 novembre è successo a un condomino: le valvole erano chiuse.</p>
+<ol>
+<li><strong>Interruttore "Riscal." acceso</strong> sul quadro elettrico di casa. In un appartamento era su OFF, ed era tutto lì.</li>
+<li><strong>Crono e termostati su "fiamma"</strong> (modalità riscaldamento) e impostati sopra la temperatura della stanza.</li>
+<li><strong>Valvole a leva aperte:</strong> la valvola rossa all'ingresso del collettore e le valvole rosse e blu nel modulo dei contatori. Una valvola a leva è aperta quando la leva è parallela al tubo, chiusa quando è di traverso.</li>
+<li><strong>Valvola rossa a croce aperta</strong> sul modulo dei contatori: si apre girando verso "Open" / "+".</li>
+<li><strong>Manopola dell'acqua non al minimo:</strong> per far partire il pavimento serve almeno 30–40 °C.</li>
+</ol>
+<p class="note"><strong>Se una valvola è dura, non forzarla:</strong> chiama il referente per la manutenzione.</p>
+<div class="gallery">
+<figure><img src="quadro-elettrico.jpg" alt="Quadro elettrico di casa con l'interruttore Riscal."><figcaption>Il quadro elettrico di casa: l'interruttore "Riscal." è il terzo da sinistra.</figcaption></figure>
+<figure><img src="valvola-ingresso-collettore.jpg" alt="Valvola a leva rossa all'ingresso del collettore"><figcaption>La valvola rossa all'ingresso del collettore.</figcaption></figure>
+<figure><img src="valvola-rossa-on-off.jpg" alt="Valvola a leva rossa con le scritte ON e OFF"><figcaption>Un'altra valvola a leva: sulla leva sono indicati ON e OFF.</figcaption></figure>
+</div>
+<figure class="wide"><img src="modulo-utenza.jpg" alt="Modulo con il contatore di calore e i contatori dell'acqua"><figcaption>Il modulo dei contatori: in basso le valvole a leva blu, in alto la valvola rossa a croce.</figcaption></figure>
+<figure class="wide"><img src="valvola-herz.jpg" alt="Valvola rossa a croce con le scritte Open e Close"><figcaption>La valvola rossa a croce da vicino: "Open" e "+" indicano il verso di apertura.</figcaption></figure>
+
 <h2 id="problemi">Problemi comuni</h2>
 <p>Quasi tutti i problemi segnalati si diagnosticano guardando il collettore.</p>
 <div class="table-wrap"><table>
@@ -128,10 +165,18 @@ footer{margin-top:48px;color:var(--quiet);font-size:.85rem}
 <tr><td>Termoarredo freddo anche con la manopola al massimo</td><td>Cronotermostato in corridoio più basso della temperatura di casa</td><td>Alza il crono (es. 25 °C)</td></tr>
 <tr><td>Termoarredo si stacca dopo un po'</td><td>Il corridoio si scalda, supera la temperatura del crono e il crono si spegne</td><td>Acqua del radiante al minimo; alza il crono di qualche decimo solo quando servono gli asciugamani caldi</td></tr>
 <tr><td>Stanze a 25 °C anche con i termostati a 19–20 °C</td><td>Il radiante sta scaldando (o l'acqua è troppo calda)</td><td>Controlla la pompa: con le stanze sotto soglia deve essere spenta. Se è accesa, i termostati potrebbero essere collegati male: chiama il tecnico</td></tr>
-<tr><td>Casa "come un forno"</td><td>Acqua del radiante troppo calda (40–60 °C)</td><td>Abbassala dal pannello in corridoio</td></tr>
+<tr><td>Casa "come un forno"</td><td>Acqua del radiante troppo calda (40–60 °C)</td><td>Abbassala dalla manopola bianca sul collettore</td></tr>
 <tr><td>Pavimento caldo solo in parte della stanza</td><td>Una testina staccata dalla sua sede</td><td>Controlla le testine al collettore e rimettila in sede</td></tr>
 <tr><td>Termoarredo non funziona più, riscaldamento mai acceso</td><td>Da capire (segnalato da un condomino)</td><td>Prima verifica il crono; se non basta, chiama il tecnico</td></tr>
 </table></div>
+
+<h2 id="raffrescamento">Raffrescamento e split</h2>
+<p>Per il raffrescamento l'impresa ha già fatto un giro di collaudo in tutte le case; per il riscaldamento non ancora.</p>
+<ul>
+<li><strong>Split scollegati dal Wi-Fi:</strong> tenere separate le reti a 2,4 e 5 GHz può non bastare. A due condomini ha risolto il <strong>reset completo dell'unità</strong>, poi la riconfigurazione dall'app.</li>
+<li><strong>Intervento Termoproject:</strong> un condomino aspetta Termoproject per uno split e chiederà anche del riscaldamento.</li>
+<li><strong>Domanda aperta:</strong> non è chiaro se d'estate rinfreschi anche il pavimento o solo gli split.</li>
+</ul>
 
 <h2 id="consigli">Consigli generali (non verificati sul nostro impianto)</h2>
 <p>Questi consigli valgono per i pavimenti radianti in genere e non vengono dalla chat. Prima di cambiare qualcosa, verificali con l'installatore.</p>
@@ -157,6 +202,7 @@ footer{margin-top:48px;color:var(--quiet);font-size:.85rem}
 <li><strong>Tecnici:</strong> un condomino aspetta un intervento di Termoproject e chiederà se si possono tenere accesi solo i termoarredi in modo più pulito. Se scopre qualcosa, va aggiunto qui.</li>
 <li><strong>Domanda aperta:</strong> non è chiaro se il collegamento tra crono, termostati e collettore sia uguale in tutti gli appartamenti. Le stesse impostazioni danno risultati diversi in case diverse.</li>
 </ul>
+<p><strong>Proposta di verifica per tutti:</strong> diversi condomini chiedono che l'impresa faccia un giro di collaudo del riscaldamento in ogni casa, come già fatto per il raffrescamento, per controllare che valvole e temperature siano impostate bene. Va chiesto al referente per la manutenzione.</p>
 
 <footer>Guida informale scritta dai condomini, non è un documento ufficiale dell'amministrazione o del costruttore.</footer>
 </main>
