@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Guida al riscaldamento</title>
+<meta name="description" content="Come usare termoarredi e pavimento radiante – Martiri delle Foibe 35-37">
+<style>
+:root{--bg:#fbfaf7;--card:#fff;--ink:#1d1d1b;--quiet:#5d5b55;--line:#dcd8cf;--accent:#2f6fd6;--accent-bg:#e6effc;--tint:#f3f1ec}
+@media (prefers-color-scheme:dark){:root{--bg:#191917;--card:#22221f;--ink:#ecebe6;--quiet:#a9a69d;--line:#45433d;--accent:#7aa7f0;--accent-bg:#1f2c42;--tint:#2a2926}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:720px;margin:0 auto;padding:32px 16px 64px}
+h1{font-size:1.8rem;line-height:1.2;margin:0 0 4px}
+.asof{color:var(--quiet);font-size:.9rem;margin:0 0 24px}
+h2{font-size:1.3rem;margin:40px 0 8px;padding-top:8px;border-top:1px solid var(--line)}
+.lead{font-size:1.1rem;font-weight:600}
+nav{background:var(--tint);border-radius:10px;padding:12px 16px;margin:20px 0}
+nav ol{margin:4px 0 0;padding-left:20px}
+nav a{color:var(--accent)}
+.table-wrap{overflow-x:auto;margin:12px 0}
+table{border-collapse:collapse;width:100%;font-size:.95rem}
+th,td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+th{background:var(--tint)}
+figure{margin:16px 0}
+figure img{display:block;max-width:260px;width:100%;border-radius:8px;border:1px solid var(--line);background:#fff}
+figcaption{color:var(--quiet);font-size:.9rem;font-style:italic;margin-top:6px}
+svg.diagram{width:100%;height:auto;display:block;margin:16px 0}
+.note{background:var(--tint);border-left:4px solid var(--accent);padding:10px 14px;border-radius:6px}
+footer{margin-top:48px;color:var(--quiet);font-size:.85rem}
+</style>
+</head>
+<body>
+<main>
+<h1>Guida al riscaldamento</h1>
+<p class="asof">Martiri delle Foibe 35-37 · aggiornata al 9 novembre 2026</p>
+
+<p class="lead">Per scaldare solo i termoarredi dei bagni senza scaldare le stanze: cronotermostato centrale alto, termostati delle stanze bassi, acqua del radiante al minimo.</p>
+<p>Questa guida raccoglie i consigli che i condomini si sono scambiati nella chat del condominio il 9 novembre 2026. Sono esperienze pratiche, non istruzioni ufficiali del costruttore o dell'installatore: gli impianti dei singoli appartamenti possono essere collegati in modo diverso.</p>
+
+<nav><strong>Indice</strong>
+<ol>
+<li><a href="#impianto">Come funziona l'impianto</a></li>
+<li><a href="#termoarredi">Solo termoarredi, stanze spente</a></li>
+<li><a href="#acqua">Temperatura dell'acqua</a></li>
+<li><a href="#collettore">Controllare pompa e testine</a></li>
+<li><a href="#problemi">Problemi comuni</a></li>
+<li><a href="#consigli">Consigli generali</a></li>
+<li><a href="#aiuto">Chi può aiutare</a></li>
+</ol></nav>
+
+<h2 id="impianto">Come funziona l'impianto</h2>
+<p>Termoarredi e pavimento radiante sono due circuiti diversi, entrambi sotto il cronotermostato centrale.</p>
+
+<svg class="diagram" viewBox="0 0 760 568" role="img" aria-label="Termoarredi e pavimento radiante sono due circuiti separati" font-family="system-ui,sans-serif" font-size="13">
+<defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" style="fill:var(--quiet)"/></marker></defs>
+<g style="fill:none;stroke:var(--quiet)" stroke-width="1.25">
+<path d="M380 156V176H184V196" marker-end="url(#arr)"/><path d="M380 176H576V196" marker-end="url(#arr)"/>
+<path d="M576 268V308" marker-end="url(#arr)"/><path d="M576 412V452" marker-end="url(#arr)"/>
+</g>
+<g style="fill:none;stroke:var(--line)" stroke-width="1.5">
+<rect x="200" y="84" width="360" height="72" rx="8"/>
+<rect x="416" y="196" width="320" height="72" rx="8"/>
+<rect x="416" y="308" width="320" height="104" rx="8"/>
+<rect x="416" y="452" width="320" height="56" rx="8"/>
+</g>
+<rect x="24" y="196" width="320" height="72" rx="8" style="fill:var(--accent-bg);stroke:var(--accent)" stroke-width="2"/>
+<g text-anchor="middle">
+<text x="380" y="108" font-weight="600" style="fill:var(--ink)">Cronotermostato centrale</text>
+<text x="380" y="124" font-size="11.5" style="fill:var(--quiet)">in corridoio, fa da interruttore generale</text>
+<text x="380" y="140" font-size="11.5" style="fill:var(--quiet)">sotto la temperatura di casa = tutto spento</text>
+<text x="184" y="220" font-weight="600" style="fill:var(--ink)">Termoarredi dei bagni</text>
+<text x="184" y="236" font-size="11.5" style="fill:var(--ink)">circuito ad alta temperatura,</text>
+<text x="184" y="252" font-size="11.5" style="fill:var(--ink)">a monte della pompa del radiante</text>
+<text x="576" y="220" font-weight="600" style="fill:var(--ink)">Termostati delle stanze</text>
+<text x="576" y="236" font-size="11.5" style="fill:var(--quiet)">chiedono caldo solo se la stanza</text>
+<text x="576" y="252" font-size="11.5" style="fill:var(--quiet)">è sotto la soglia impostata</text>
+<text x="576" y="332" font-weight="600" style="fill:var(--ink)">Collettore del radiante</text>
+<text x="576" y="348" font-size="11.5" style="fill:var(--quiet)">pannello bianco a muro in casa</text>
+<text x="576" y="364" font-size="11.5" style="fill:var(--quiet)">pompa: luce verde = accesa</text>
+<text x="576" y="380" font-size="11.5" style="fill:var(--quiet)">testine alzate, bordo rosso = in funzione</text>
+<text x="576" y="396" font-size="11.5" style="fill:var(--quiet)">temperatura acqua: pannello in corridoio</text>
+<text x="576" y="476" font-weight="600" style="fill:var(--ink)">Pavimento radiante</text>
+<text x="576" y="492" font-size="11.5" style="fill:var(--quiet)">scalda le stanze</text>
+</g>
+<text x="586" y="292" font-size="11.5" style="fill:var(--quiet)">una stanza chiede caldo</text>
+<text x="586" y="436" font-size="11.5" style="fill:var(--quiet)">pompa accesa</text>
+<text x="24" y="544" style="fill:var(--ink)">Crono alto + stanze basse = termoarredi caldi, pompa spenta, pavimento freddo.</text>
+</svg>
+
+<p>I termoarredi dei bagni stanno sul circuito ad alta temperatura, prima della pompa del radiante: per questo possono scaldare anche quando il pavimento è spento. Il pavimento parte solo se almeno un termostato di stanza chiede caldo.</p>
+
+<h2 id="termoarredi">Solo termoarredi, stanze spente</h2>
+<p>Con queste impostazioni i termoarredi scaldano e il pavimento radiante resta spento. Due famiglie (una al 35, una al 37) confermano che da loro funziona.</p>
+<ol>
+<li>Imposta il <strong>cronotermostato centrale</strong> (in corridoio) a <strong>25 °C</strong>. È lui che comanda i termoarredi: se è più basso della temperatura di casa, i termoarredi restano freddi anche con la manopola al 5.</li>
+<li>Imposta i <strong>termostati delle stanze</strong> a <strong>19–20 °C</strong>, cioè sotto la temperatura attuale: così non chiedono calore e il radiante non parte.</li>
+<li>Abbassa la <strong>temperatura dell'acqua</strong> del radiante al minimo dal pannello in corridoio (vedi la sezione successiva).</li>
+<li>Controlla il collettore: la pompa deve essere spenta e le testine abbassate (vedi <a href="#collettore">Controllare pompa e testine</a>).</li>
+</ol>
+<p>Se le stanze si scaldano comunque, passa alla <a href="#problemi">tabella dei problemi</a>.</p>
+
+<h2 id="acqua">Temperatura dell'acqua</h2>
+<p>Tieni l'acqua del radiante bassa: a 40 °C una famiglia aveva la casa "come un forno". Abbassandola si riesce a tenere il riscaldamento acceso in modo costante senza soffocare. Qualcuno sospetta di averla ancora a 60 °C: vale la pena controllare.</p>
+<p>Si regola dal <strong>pannello in corridoio</strong>.</p>
+<p class="note"><strong>Trucco per la doccia:</strong> con l'acqua al minimo, poco prima della doccia alza di qualche decimo di grado il cronotermostato in corridoio. I termoarredi si scaldano in fretta e trovi gli asciugamani caldi. Poi riporta il valore come prima.</p>
+
+<h2 id="collettore">Controllare pompa e testine</h2>
+<p>Il collettore ti dice in pochi secondi se il radiante sta scaldando o no.</p>
+<p><strong>Dove si trova:</strong> è un pannellone bianco a muro dentro casa. A seconda dell'appartamento è in sala, in corridoio o in cameretta (a volte nascosto dietro un mobile).</p>
+<figure>
+<img src="collettore.png" alt="Cassetta bianca a muro del collettore radiante">
+<figcaption>Com'è fatta la cassetta del collettore: foto d'esempio condivisa in chat. Dietro lo sportello trovi la pompa e le testine.</figcaption>
+</figure>
+<p><strong>Cosa guardare:</strong></p>
+<div class="table-wrap"><table>
+<tr><th>Elemento</th><th>Acceso (sta scaldando)</th><th>Spento</th></tr>
+<tr><td>Pompa di circolazione</td><td>Luce verde accesa</td><td>Luce verde spenta</td></tr>
+<tr><td>Testine (una per circuito)</td><td>Alzate, con un bordo rosso visibile</td><td>Schiacciate e piatte</td></tr>
+</table></div>
+<p>La pompa parte appena <strong>un</strong> termostato di stanza chiede caldo e si ferma quando <strong>l'ultimo</strong> ha raggiunto la temperatura. Quindi, con le impostazioni "solo termoarredi", pompa spenta e testine tutte piatte = tutto giusto.</p>
+<p>Le testine servono anche a trovare guasti: una famiglia aveva metà sala col pavimento caldo e metà freddo, e la causa era una testina staccata dalla sua sede.</p>
+
+<h2 id="problemi">Problemi comuni</h2>
+<p>Quasi tutti i problemi segnalati si diagnosticano guardando il collettore.</p>
+<div class="table-wrap"><table>
+<tr><th>Sintomo</th><th>Causa probabile</th><th>Cosa fare</th></tr>
+<tr><td>Termoarredo freddo anche con la manopola al massimo</td><td>Cronotermostato in corridoio più basso della temperatura di casa</td><td>Alza il crono (es. 25 °C)</td></tr>
+<tr><td>Termoarredo si stacca dopo un po'</td><td>Il corridoio si scalda, supera la temperatura del crono e il crono si spegne</td><td>Acqua del radiante al minimo; alza il crono di qualche decimo solo quando servono gli asciugamani caldi</td></tr>
+<tr><td>Stanze a 25 °C anche con i termostati a 19–20 °C</td><td>Il radiante sta scaldando (o l'acqua è troppo calda)</td><td>Controlla la pompa: con le stanze sotto soglia deve essere spenta. Se è accesa, i termostati potrebbero essere collegati male: chiama il tecnico</td></tr>
+<tr><td>Casa "come un forno"</td><td>Acqua del radiante troppo calda (40–60 °C)</td><td>Abbassala dal pannello in corridoio</td></tr>
+<tr><td>Pavimento caldo solo in parte della stanza</td><td>Una testina staccata dalla sua sede</td><td>Controlla le testine al collettore e rimettila in sede</td></tr>
+<tr><td>Termoarredo non funziona più, riscaldamento mai acceso</td><td>Da capire (segnalato da un condomino)</td><td>Prima verifica il crono; se non basta, chiama il tecnico</td></tr>
+</table></div>
+
+<h2 id="consigli">Consigli generali (non verificati sul nostro impianto)</h2>
+<p>Questi consigli valgono per i pavimenti radianti in genere e non vengono dalla chat. Prima di cambiare qualcosa, verificali con l'installatore.</p>
+<p><strong>Per usarlo meglio</strong></p>
+<ul>
+<li><strong>Il radiante è lento.</strong> Ci mette ore a scaldarsi e a raffreddarsi. Rende meglio con una temperatura quasi costante e un abbassamento notturno di 2–3 °C al massimo. Spegnerlo e riaccenderlo spesso consuma di più.</li>
+<li><strong>Acqua di mandata tra 30 e 35 °C.</strong> È il valore tipico per il radiante: in una casa nuova e ben isolata 40 °C sono già tanti, 60 °C troppi.</li>
+<li><strong>Pompa di calore:</strong> se l'impianto ne usa una (lo split lo fa pensare, ma va confermato), acqua più bassa vuol dire anche bolletta più bassa.</li>
+<li><strong>Porte dei bagni chiuse</strong> quando i termoarredi sono accesi: il calore arriva meno al crono in corridoio, che così non si spegne troppo presto.</li>
+<li><strong>Niente tappeti spessi o mobili senza piedini</strong> sul pavimento: isolano e frenano il calore.</li>
+</ul>
+<p><strong>Per i problemi</strong></p>
+<ul>
+<li><strong>Termoarredo freddo in alto o a metà:</strong> spesso c'è aria dentro. Va sfiatato con la valvolina in alto, a impianto acceso, tenendo un panno sotto per l'acqua.</li>
+<li><strong>Stanza che scalda col termostato basso:</strong> le testine nuove a volte escono di fabbrica aperte finché non ricevono corrente per qualche minuto. Anche una testina staccata di solito lascia la valvola aperta.</li>
+<li><strong>Asciugamani caldi senza accendere l'impianto:</strong> esistono kit con resistenza elettrica da montare sul termoarredo. Prima di montarne uno, chiedi all'installatore se è compatibile.</li>
+</ul>
+
+<h2 id="aiuto">Chi può aiutare</h2>
+<p>Chiama un tecnico se, con tutte le stanze sotto soglia, la pompa resta accesa o un termoarredo non si scalda nemmeno col crono alto.</p>
+<ul>
+<li><strong>In condominio:</strong> alcuni condomini hanno già capito come funzionano pompa e testine e si sono offerti di mostrare il collettore dal vivo. Chiedete nel gruppo.</li>
+<li><strong>Tecnici:</strong> un condomino aspetta un intervento di Termoproject e chiederà se si possono tenere accesi solo i termoarredi in modo più pulito. Se scopre qualcosa, va aggiunto qui.</li>
+<li><strong>Domanda aperta:</strong> non è chiaro se il collegamento tra crono, termostati e collettore sia uguale in tutti gli appartamenti. Le stesse impostazioni danno risultati diversi in case diverse.</li>
+</ul>
+
+<footer>Guida informale scritta dai condomini, non è un documento ufficiale dell'amministrazione o del costruttore.</footer>
+</main>
+</body>
+</html>
